@@ -5,10 +5,10 @@ import numpy as np
 CUDA_VISIBLE_DEVICES = '0'  # The current version only supports one GPU training
 
 
-set = 'CAR'  # Different dataset with different
+set = 'CUB'  # Different dataset with different
 model_name = ''
 
-batch_size = 6
+batch_size = 2
 vis_num = batch_size  # The number of visualized images in tensorboard
 eval_trainset = False  # Whether or not evaluate trainset
 save_interval = 1
@@ -24,7 +24,7 @@ input_size = 448
 
 # The pth path of pretrained model
 pretrain_path = './models/pretrained/resnet50-19c8e357.pth'
-
+# pretrain_path = ''
 
 if set == 'CUB':
     model_path = './checkpoint/cub'  # pth save path
